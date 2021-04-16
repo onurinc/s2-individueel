@@ -16,5 +16,6 @@ namespace PlannerWebApplicationV2.Data
         }
 
         public DbSet<ProjectsTable> Projects { get; set; }
+
     }
 }
