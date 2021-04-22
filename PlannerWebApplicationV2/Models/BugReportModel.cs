@@ -19,11 +19,11 @@ namespace PlannerWebApplicationV2.Models
         [Display(Name = "Subject")]
         public string Subject { get; set; }
 
-
         [Required(ErrorMessage = "Please provide some information about the issue")]
         [Display(Name = "Provide information about the problem here")]
+        [StringLength(500, ErrorMessage = "You can only use 500 characters to provide the information")]
+        [MaxLength(500)]
         public string Body { get; set; }
-
 
     }
 }

@@ -27,6 +27,7 @@ namespace PlannerWebApplicationV2.Data
             mailMessage.To.Add(email);
             mailMessage.Subject = subject;
             mailMessage.From = new MailAddress("db3b3cdf8c-c3e97c@inbox.mailtrap.io");
+            mailMessage.Body = body;
             mailMessage.IsBodyHtml = false;
 
             SmtpClient smtp = new SmtpClient("smtp.mailtrap.io");
